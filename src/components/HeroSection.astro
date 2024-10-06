@@ -1,0 +1,50 @@
+---
+import GithubIcon from '../components/icons/GithubIcon.astro';
+import LinkedinIcon from '../components/icons/LinkedinIcon.astro';
+import SocialPill from '../components/SocialPill.astro';
+import GmailIcon from "../components/icons/GmailIcon.astro";
+---
+<section>
+   <div class="pb-16">
+        <img 
+        src="../../public/images/my-photo.png" 
+        alt="my photo"
+        class="rounded-full size-24 md:ml-1 md:hidden"
+    />
+   </div>
+    <h1 class="text-2xl font-semibold pb-4 text-green-300/85">Jonathan Urrego</h1>
+    <div class="flex md:gap-0 gap-4 flex-col md:flex-row">
+        <div class="text-white font-bold flex flex-col gap-y-1">
+            <span class="text-3xl md:text-7xl">Desarrollador</span>
+            <span class="text-3xl md:text-7xl">frontend.</span>
+        </div>
+         
+    </div>
+    <div class="flex flex-wrap md:w-full md:mx-auto">
+        <h2 class="pt-4 text-base md:text-2xl opacity-80 text-wrap md:mt-4">
+            <span class="text-yellow-200/90">+4 años de experiencia.</span>
+            Soy de Bogotá, Colombia.
+            Especializado en crear interfaces de usuario intuitivas, dinámicas y únicas.
+        </h2>
+    </div>
+    <nav class="flex md:gap-x-4 gap-2 mt-8 text-xs md:text-xl md:justify-normal">
+        <SocialPill href="https://www.linkedin.com/in/jonathan-urrego-dev">
+            <LinkedinIcon class="w-6 h-6" />
+            <p class="hidden md:block">
+                LinkedIn
+            </p>
+        </SocialPill>
+        <SocialPill href="https://github.com/UrregoJontahan">
+            <GithubIcon class="w-6 h-6"/>
+            <p class="hidden md:block">
+                GitHub 
+            </p>
+        </SocialPill>
+        <SocialPill>
+            <GmailIcon class="w-6 h-6"/>
+            <p class="hidden md:block">
+                jhonnathan.dev@gmail.com
+            </p>
+        </SocialPill>
+    </nav>
+</section>

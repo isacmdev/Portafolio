@@ -1,0 +1,29 @@
+---
+import LinkedinIcon from "../components/icons/LinkedinIcon.astro"
+import GithubIcon from "./icons/GithubIcon.astro"
+import GmailIcon from "./icons/GmailIcon.astro"
+---
+
+<footer class="w-[400px] md:w-full" id="contact">
+   <div class="relative bottom-0 w-full flex justify-center bg-black/95 shadow-xl shadow-gray-50/5
+        p-8 gap-x-8">
+        <div class="flex gap-x-2 hover:cursor-pointer">
+            <LinkedinIcon class="w-6 h-6" />
+            <a href="https://www.linkedin.com/in/jonathan-urrego-dev" target="_blank" class="hidden md:block">
+                LinkedIn
+            </a>
+        </div>
+        <div class="flex gap-x-2 hover:cursor-pointer">
+            <GithubIcon class="w-6 h-6"/>
+            <a href="https://github.com/UrregoJontahan" target="_blank" class="hidden md:block">
+                GitHub 
+            </a>
+        </div>
+        <div class="flex gap-x-2 hover:cursor-pointer">
+            <GmailIcon class="w-6 h-6"/>
+            <p>
+                jhonnathan.dev@gmail.com
+            </p>
+        </div>
+   </div>
+</footer>

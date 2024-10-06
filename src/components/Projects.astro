@@ -1,0 +1,79 @@
+---
+import NextjsIcon from "./icons/NextjsIcon.astro"
+import ReactIcon from "./icons/ReactIcon.astro"
+import TsIcon from "./icons/TsIcon.astro"
+import WorkIcon from "./icons/WorkIcon.astro"
+---
+
+<section class="flex flex-col">
+    <div class="flex gap-x-4">
+        <WorkIcon class="size-7"/>
+        <h1 class="pb-16 text-2xl font-semibold">Projects</h1>
+    </div>
+    <div class="flex flex-wrap gap-5 cursor-pointer">
+        <div class="border-white/20 border-2 p-4 rounded-xl hover:border-white/50 hover:bg-gray-100/5
+        hover:scale-110 transition">
+            <img src="../../public/images/projects/code1.jpg" alt="code"
+                class="w-[320px] h-[200px] rounded-xl">
+                <h3 class="pt-4 font-semibold text-lg text-green-300/85">E-commerce con Next.js</h3>
+                <p class="flex flex-wrap w-[320px] pt-4">
+                    Plataforma de comercio electrónico con Next.js y TypeScript,
+                    optimizando SEO, rendimiento, y pagos con Stripe,
+                    garantizando escalabilidad y una experiencia fluida.
+                </p>
+                <div class="flex gap-x-4 p-4 justify-center">
+                    <NextjsIcon class="size-6"/>
+                    <ReactIcon class="size-6"/>
+                    <TsIcon class="size-6"/>
+                </div>
+        </div>
+        <div class="border-white/20 border-2 p-4 rounded-xl  hover:border-white/50 hover:bg-gray-100/5
+        hover:scale-110 transition">
+            <img src="../../public/images/projects/code2.jpg" alt="code"
+                class="w-[320px] h-[200px] rounded-xl">
+                <h3 class="pt-4 font-semibold text-lg text-green-300/85"> Colaboración en Tiempo Real</h3>
+                <p class="flex flex-wrap w-[320px] pt-4">
+                    Herramienta de colaboración en tiempo real con React y WebSockets,
+                    permitiendo edición simultánea de documentos con sincronización y manejo
+                    eficiente de datos.
+                </p>
+                <div class="flex gap-x-4 p-4 justify-center">
+                    <NextjsIcon class="size-6"/>
+                    <ReactIcon class="size-6"/>
+                    <TsIcon class="size-6"/>
+                </div>
+        </div>
+        <div class="border-white/20 border-2 p-4 rounded-xl  hover:border-white/50 hover:bg-gray-100/5
+        hover:scale-110 transition">
+            <img src="../../public/images/projects/code3.png" alt="code"
+                class="w-[320px] h-[200px] rounded-xl">
+                <h3 class="pt-4 font-semibold text-lg text-green-300/85">CMS Optimizado</h3>
+                <p class="flex flex-wrap w-[320px] pt-4">
+                    CMS con Astro y Vite enfocado en la generación estática, 
+                    ofreciendo una interfaz moderna y rápida, 
+                    optimizada para un rendimiento superior.
+                </p>
+                <div class="flex gap-x-4 p-4 justify-center">
+                    <NextjsIcon class="size-6"/>
+                    <ReactIcon class="size-6"/>
+                    <TsIcon class="size-6"/>
+                </div>
+        </div>
+        <div class="border-white/20 border-2 p-4 rounded-xl  hover:border-white/50 hover:bg-gray-100/5
+        hover:scale-110 transition">
+            <img src="../../public/images/projects/code4.jpg" alt="code"
+                class="w-[320px] h-[200px] rounded-xl">
+                <h3 class="pt-4 font-semibold text-lg text-green-300/85">Dashboard de Análisis</h3>
+                <p class="flex flex-wrap w-[320px] pt-4">
+                    Dashboard interactivo de análisis de datos con React y TypeScript,
+                    utilizando Context API y Hooks para visualización eficiente
+                    y una experiencia óptima
+                </p>
+                <div class="flex gap-x-4 p-4 justify-center">
+                    <NextjsIcon class="size-6"/>
+                    <ReactIcon class="size-6"/>
+                    <TsIcon class="size-6"/>
+                </div>
+        </div>
+    </div>
+</section>
