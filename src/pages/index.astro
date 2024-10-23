@@ -1,11 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import HeroSection from "../components/HeroSection.astro";
+import HeroSection from "../components/hero/HeroSection.astro";
 import Skills from "../components/about/Skills.astro";
 import SkilsIcon from "../components/icons/SkilsIcon.astro";
 import AboutMe from "../components/about/AboutMe.astro";
-import Projects from "../components/Projects.astro";
-import Experience from "../components/Experience.astro";
+import Projects from "../components/projects/Projects.astro";
+import Experience from "../components/experience/Experience.astro";
 ---
 
 <Layout
@@ -19,12 +19,14 @@ import Experience from "../components/Experience.astro";
 		>
 			<HeroSection />
 		</section>
-		<section class="w-[370px] mx-auto md:w-[740px] pt-44 pb-28 md:mt-16">
+		<section 
+			id="experience"
+			class="w-[370px] mx-auto md:w-[740px] pt-28 pb-28 md:mt-16">
 			<Experience />
 		</section>
 		<section
 			id="projects"
-			class="w-[370px] mx-auto md:w-[740px] pt-44 pb-44 md:mt-16"
+			class="w-[370px] mx-auto md:w-[740px] pt-32 pb-44 md:mt-16"
 		>
 			<Projects />
 		</section>
