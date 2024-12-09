@@ -1,46 +1,44 @@
 ---
-import GithubIcon from '../../components/icons/GithubIcon.astro';
 import LinkedinIcon from '../../components/icons/LinkedinIcon.astro';
 import SocialPill from '../../components/social-pill/SocialPill.astro';
 import GmailIcon from "../../components/icons/GmailIcon.astro";
+import GithubIcon from '../icons/GithubIcon.astro';
 ---
-<section class="mt-16">
-    <!-- <img src="/images/perfil.jpg" class="w-[200px] h-[200px] object-cover rounded-full my-12 md:hidden" alt=""> -->
-    <h1 class="text-2xl font-semibold pb-4 text-green-400/85">Jonathan Urrego</h1>
+<section class="mt- text-black">
+    <h1 class="text-2xl font-semibold pb-4 text-pink-400/85">Isabel Caballero</h1>
     <div class="flex md:gap-0 gap-4 flex-col md:flex-row">
-        <div class="text-white/80 font-bold flex flex-col gap-y-1">
-            <span class="text-3xl md:text-8xl">Desarrollador</span>
-            <span class="text-3xl md:text-9xl">Fullstack.</span>
+        <div class="text-black/80 font-bold flex flex-col gap-y-1">
+            <span class="text-3xl md:text-8xl">Desarrolladora</span>
+            <span class="text-3xl md:text-9xl">FrontEnd</span>
         </div>
          
     </div>
     <div class="flex flex-wrap md:w-full md:mx-auto">
-        <h2 class="pt-4 text-base md:text-2xl opacity-80 text-wrap md:mt-4">
-            <span class=" text-fuchsia-500 text-3xl font-semibold">+7 años de experiencia.</span><br>
+        <h2 class="pt-4 text-base md:text-2xl text-wrap md:mt-4">
+            <span class=" text-pink-500 text-3xl font-semibold">+3 años de experiencia.</span><br>
                 Soy de Bogotá, Colombia.
             <br>
             Especializado en crear interfaces de usuario intuitivas, 
-            dinámicas y únicas, junto con el desarrollo de backends robustos y 
-            escalables, con arquitecturas limpias y eficientes para el negocio.
+            dinámicas y únicas.
         </h2>
     </div>
-    <nav class="flex md:gap-x-4 gap-2 mt-8 text-xs md:text-xl md:justify-normal">
-        <SocialPill href="https://www.linkedin.com/in/jonathan-urrego-dev">
+    <nav class="flex md:gap-x-4 mt-8 text-xs md:text-xl md:justify-normal">
+        <SocialPill href="https://www.linkedin.com/in/isabel-caballero-dev/">
             <LinkedinIcon class="w-6 h-6" />
-            <p class="hidden md:block">
+            <p >
                 LinkedIn
             </p>
         </SocialPill>
         <SocialPill href="https://github.com/jadodev">
-            <GithubIcon class="w-6 h-6"/>
-            <p class="hidden md:block">
+            <GithubIcon class="w-7 h-7"/>
+            <p class="">
                 GitHub 
             </p>
         </SocialPill>
         <SocialPill>
-            <GmailIcon class="w-6 h-6"/>
-            <p class="hidden md:block">
-                jhonnathan.dev@gmail.com
+            <GmailIcon class="md:w-8 md:h-8 w-8"/>
+            <p >
+                devisamott@gmail.com
             </p>
         </SocialPill>
     </nav>

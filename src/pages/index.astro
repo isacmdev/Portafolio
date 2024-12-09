@@ -1,49 +1,41 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import HeroSection from "../components/hero/HeroSection.astro";
-import Skills from "../components/about/Skills.astro";
-import SkilsIcon from "../components/icons/SkilsIcon.astro";
 import AboutMe from "../components/about/AboutMe.astro";
 import Projects from "../components/projects/Projects.astro";
 import Experience from "../components/experience/Experience.astro";
+import SkilsIcon from "../components/icons/SkilsIcon.astro"
+import Skills from "../components/skills/Skills.astro";
 ---
 
 <Layout
-	title="Portfolio de Jonathan Urrego - Desarrollador y programador web"
+	title="Potafolio Isabel Caballero - Desarrolladora y programadora web"
 	description="Especializado en crear interfaces de usuario intuitivas, dinámicas y únicas."
 >
-	<main class="px-6">
-		<section
-			id="top"
-			class="w-[370px] mx-auto md:w-[740px] pt-12  md:pt-44 pb-28 md:mt-16"
-		>
-			<HeroSection />
-		</section>
-		<section 
-			id="experience"
-			class="w-[370px] mx-auto md:w-[740px] pt-12 md:pt-28 pb-28 md:mt-16">
-			<Experience />
-		</section>
-		<section
-			id="projects"
-			class="w-[370px] mx-auto md:w-[740px] pt-12 md:pt-32 md:pb-44 md:mt-16"
-		>
-			<Projects />
-		</section>
-		<section id="about" 
-			class="pt-12 ">
-			<AboutMe />
-		</section>
-		<section
-			id="skills"
-			class="sm:w-[400px] w-[380px] mx-auto md:w-[740px] pt-12"
-		>
-			<div class="flex items-center gap-x-2 w-full">
-				<SkilsIcon />
-				<h2 class="text-2xl font-semibold py-4">Habilidades</h2>
-			</div>
-			<Skills />
-		</section>
-	</main>
+<main class="">
+	<section id="top" class="max-w-full mx-auto w-full pt-1 md:mt-16">
+	  <HeroSection />
+	</section>
+  
+	<section id="about" class="max-w-full mx-auto w-full pt-12 md:pt-32 md:mt-10">
+	  <AboutMe />
+	</section>
+  
+	<section id="experience" class="max-w-full mx-auto w-full pt-12">
+	  <Experience />
+	</section>
+  
+	<section id="projects" class="max-w-full mx-auto w-full pt-12 md:pt-32 md:pb-44">
+	  <Projects />
+	</section>
+  
+	<section id="skills" class="max-w-full mx-auto w-full pt-12">
+	  <div class="flex items-center gap-x-2 w-full">
+		<SkilsIcon />
+		<h2 class="text-2xl font-semibold py-4">Habilidades</h2>
+	  </div>
+	  <Skills />
+	</section>
+  </main>
 </Layout>
    

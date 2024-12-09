@@ -1,0 +1,64 @@
+.cart-experience {
+    --white: #ffbec9;
+    --black: #D14D72;
+    --primary:#FCC8D1;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    background-color: var(--primary);
+    
+    border-radius: 1rem;
+    transition: transform 0.8s ease, box-shadow 0.3s ease;
+}
+
+.cart-experience .card_experience-border {
+    overflow: hidden;
+
+    position: absolute;
+    z-index: -10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    background-image: linear-gradient(
+        0deg,
+        var(--primary) -50%,
+        var(--primary) 100%
+    );
+
+    border-radius: 1rem;
+}
+
+.card_experience-border::before {
+    content: "";
+    pointer-events: none;
+    position: fixed;
+    z-index: 200;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%), rotate(0deg);
+    transform-origin: left;
+    
+    width: 200%;
+    height: 10rem;
+    background-image: linear-gradient(
+        0deg,
+        rgba(254, 242, 244, 0) 0%,
+        #D14D72 40%,
+        #FFABAB 60%,
+        rgba(254, 242, 244, 0) 100%
+    );
+    
+    animation: rotate 8s linear infinite;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
