@@ -4,9 +4,10 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-			  softRed: '#FFABAB',
-			  darkPink: '#FCC8D1',
-			
+				softRed: '#FF748B',
+				darkPink: '#AF1740',
+				textDarkPink: '#da2650',
+				textPrincipal: '#333333'
 			},
 		},	
 	},

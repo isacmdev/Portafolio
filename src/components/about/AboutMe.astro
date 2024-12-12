@@ -1,24 +1,27 @@
 ---
 import AboutIcon from "../icons/AboutIcon.astro"
 ---
-
-<section class=" w-full text-black">
-    <div class="flex gap-2">
-        <AboutIcon class=""/>
-        <h2 class="text-2xl font-semibold flex items-center">Sobre mí</h2>
-    </div>
-        <div class="flex md:flex-row mt-10 md:items-center">
-            <p class="pb-8 pt-2 text-xl pl-4 w-[400px]  opacity-80 hidden md:block">
-                Desarrolladora de Aplicaciones web inclusivas y accesibles para todos. Sé trabajar en equipos diversos y creo que la retroalimentación es esencial para mejorar. Mi objetivo es seguir evolucionando como profesional y contribuir a proyectos tecnológicos desafiantes.
-            </p>
-            <p class="flex items-center md:hidden ">
-                Desarrolladora de aplicaciones web inclusivas y accesibles, con experiencia trabajando en equipos diversos. Creo que la retroalimentación es clave para crecer. Me apasiona seguir aprendiendo y contribuyendo en proyectos desafiantes.
-            </p>
-            <img
-             
-                src="/images/photo.jpeg" 
-                alt="my-photo"
-                class="rounded-2xl w-[300px] h-[350px] object-cover md:ml-auto md:mr-2 ml-4"
-            />
-        </div>
+<section class="flex flex-col justify-center text-black">
+  <header class="flex gap-2 items-center">
+    <AboutIcon />
+    <h2 class="text-2xl font-semibold">Sobre mí</h2>
+  </header>
+  <div class="flex flex-col md:flex-row mt-10 gap-10 text-textPrincipal">
+    <!-- Descripción principal -->
+    <p class="text-lg leading-relaxed max-w-sm hidden md:block text-center md:text-left">
+      Como desarrolladora de aplicaciones web, me especializo en crear experiencias digitales inclusivas y accesibles que realmente importan. Mi experiencia trabajando con equipos diversos me ha enseñado que la colaboración y la retroalimentación son clave para alcanzar la excelencia. Estoy comprometida con el aprendizaje continuo y apasionada por enfrentar proyectos tecnológicos desafiantes que generen un impacto positivo.
+    </p>
+    <p class="block md:hidden text-center  leading-relaxed  max-w-lg ">
+       Desarrolladora web apasionada por crear aplicaciones inclusivas y accesibles. Trabajo bien en equipos diversos, valoro la retroalimentación y disfruto asumir retos tecnológicos que generen impacto positivo.    
+    </p>
+    <!-- Imagen -->
+    <figure class="flex justify-center md:justify-center">
+      <img
+        src="/images/photo.jpeg"
+        alt="Fotografía de la desarrolladora"
+        class="rounded-2xl w-full max-w-xs md:max-w-sm object-cover"
+      />
+    </figure>
+  </div>
 </section>
+

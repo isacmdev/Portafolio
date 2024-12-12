@@ -3,54 +3,46 @@ import ExperienceIcon from "../icons/ExperienceIcon.astro"
 import "./experiencia.css"
 ---
 
-<section class="text-black  mt-20">
-    <div class=" flex items-center gap-2"> 
-        <ExperienceIcon />
-        <h1 class="font-bold text-2xl">Experiencia laboral</h1>
-    </div>
-        <div class="flex mt-10 gap-12 " >
-            <div class="cart-experience">
-                <div class="card_experience-border"></div>
-                <h2 class="font-semibold text-xl"> Biresdev </h2>
-                <h3 class="text-darkPink">Abril 2021 - Presente </h3>
-                <article class="flex flex-col gap-4 opacity-80 items-center">
-                    <ul>
-                        <li class="">
-                             <h2>● Plataforma de Gestión de Cobranzas </h2> 
-                        </li>
-                            <li class="hidden md:block">- Desarrollo frontend con Angular y Tailwind CSS.</li>
-                            <li class="hidden md:block">- Implementación de integraciones AWS (S3, Lambda, Cognito)</li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <h2 class="">● Módulo de Gestión de Incidentes </h2>
-                        </li>
-                        <li>
-                            <p class="hidden md:block">- Implementación de mapas interactivos y GPS.</p>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <h2 class="">● Plataforma E-commerce </h2>
-                        </li>
-                        <li>
-                            <p class="hidden md:block">- Desarrollo de funcionalidades en React y NextJS.</p>
-                        </li>
-                        <li> 
-                            <p class="hidden md:block">- Integración de pasarelas de pago (PayPal y Mercado Pago) y autenticación OAuth2 con Auth0.</p>
-                        </li>
-                    </ul>
-                </article>    
-            </div>
-            <div class="cart-experience w-[600px]">
-                <div class="card_experience-border "></div>
-                <h2 class="font-semibold text-xl">Gradiweb - (Practicas)</h2>
-                <h3 class="text-darkPink">Sep 2020 - Diciembre 2019</h3>
-                <article class="flex flex-col gap-2 opacity-80">
-                    <p>Desarrollo de booking ecológico con React y SASS.</p>
-                    <p>Gestión de estado con Redux para optimización de recursos.</p>
-                    <p>Colaboración en SCRUM usando Jira y BitBucked.</p>
-                </article>
-            </div>
-        </div>
+<section class="flex flex-col text-black">
+  <header class="flex items-center gap-2">
+    <ExperienceIcon aria-hidden="true" />
+    <h1 class="font-bold text-2xl">Experiencia laboral</h1>
+  </header>
+  <div class="flex flex-col md:flex-row mt-10 gap-12 max-w-screen-md">
+    <!-- Bloque de experiencia: BairesDev -->
+    <article class="cart-experience p-8 flex flex-col items-center">
+      <div class="card_experience-border"></div>
+      <h2 class="font-semibold text-xl">BairesDev</h2>
+      <h3 class="text-darkPink">Abril 2021 - Presente</h3>
+      <ul class="flex flex-col gap-4 opacity-80">
+        <li>
+          <h4 class="font-bold">● Plataforma de Gestión de Cobranzas</h4>
+          <ul>
+            <li class="hidden md:block">- Desarrollo frontend con Angular y Tailwind CSS.</li>
+            <li class="hidden md:block">- Implementación de integraciones AWS (S3, Lambda, Cognito).</li>
+          </ul>
+        </li>
+        <li>
+          <h4 class="font-bold">● Módulo de Gestión de Incidentes</h4>
+          <p class="hidden md:block">- Implementación de mapas interactivos y GPS.</p>
+        </li>
+        <li>
+          <h4 class="font-bold">● Plataforma E-commerce</h4>
+          <p class="hidden md:block">- Desarrollo de funcionalidades en React y NextJS.</p>
+          <p class="hidden md:block">- Integración de pasarelas de pago (PayPal, Mercado Pago) y autenticación OAuth2 con Auth0.</p>
+        </li>
+      </ul>
+    </article>
+    <!-- Bloque de experiencia: Gradiweb -->
+    <article class="cart-experience p-8">
+      <div class="card_experience-border"></div>
+      <h2 class="font-semibold text-xl">Gradiweb (Prácticas)</h2>
+      <h3 class="text-darkPink">Septiembre 2020 - Diciembre 2019</h3>
+      <ul class="flex flex-col gap-2 opacity-80">
+        <li>- Desarrollo de booking ecológico con React y SASS.</li>
+        <li>- Gestión de estado con Redux para optimización de recursos.</li>
+        <li>- Colaboración en SCRUM usando Jira y BitBucket.</li>
+      </ul>
+    </article>
+  </div>
 </section>

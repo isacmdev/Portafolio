@@ -1,49 +1,35 @@
----
-import JsIcon from "../icons/JsIcon.astro"
----
-
-<section class="flex flex-col gap-x-10 text-black">
-    <div class="flex gap-x-4 items-center">
-        <img class="" src="src/components/icons/Projects.png" alt="">
-        <h1 class=" text-2xl font-bold">Proyectos</h1>
+<section class="flex flex-col gap-5 text-black">
+    <div class="flex items-center gap-4">
+        <img src="src/components/icons/Projects.png" alt="Íconos de proyectos" />
+        <h1 class="text-2xl font-bold">Proyectos</h1>
     </div>
-    <div class="flex cursor-pointer mt-16 items-center">
-        <a target="_blank"
-            href="https://marketplace.visualstudio.com/vscode"
-            class="cart-experience w-[350px] rounded-xl flex justify-center items-center text-center"
-        > 
-            <div class="w-full h-auto flex justify-center items-center flex-col">
-                <img src="/images/krampus.png" alt="code"
-                    class="w-[320px] h-[200px] rounded-xl"
-                >
-                    <h3 class="pt-4 font-semibold text-lg text-darkPink"> Pear Programing Krampus </h3>
-                    <p class="flex w-[320px] pt-4">
-                        Herramienta de colaboración en tiempo real con JavaScript y WebSockets,
-                        permitiendo edición simultánea de documentos con sincronización y manejo
-                        eficiente de datos.
-                    </p>
-                    <div class="flex justify-center items-center text-center w-[320px] mt-4">
-                        <JsIcon class="size-6"/>
-                    </div>
-                    <div class="card_experience-border"></div>
-            </div>
+
+    <div class="flex cursor-pointer flex-wrap gap-10 md:gap-28 justify-center items-center max-w-screen-2xl">
+        <!-- Primer proyecto: Pear Programing Krampus -->
+        <a target="_blank" href="https://marketplace.visualstudio.com/vscode" class="cart-experience w-[280px] md:w-[330px] rounded-xl flex justify-center items-center text-center" aria-label="Ir a Pear Programing Krampus">
+            <article class="w-full h-full flex justify-center items-center flex-col pt-3">
+                <img src="/images/krampus.png" alt="Pantalla de Pear Programing Krampus, herramienta de colaboración" class="w-[220px] h-[180px] rounded-xl" />
+                <h3 class="font-semibold text-lg text-darkPink">Pear Programing Krampus</h3>
+                <p class="flex pt-4">
+                    Herramienta de colaboración en tiempo real con JavaScript y WebSockets,
+                    permitiendo edición simultánea de documentos con sincronización y manejo
+                    eficiente de datos.
+                </p>
+                <div class="card_experience-border"></div>
+            </article>
         </a>
-        <a  target="_blank"
-            href="https://publico.transbank.cl/landing-onepay-referidos"
-            class="cart-experience w-[350px] border-white/20 border-2 rounded-xl flex justify-center items-center text-center ">
-            <div class="w-[344px] h-[463px] flex justify-center items-center text-center flex-col rounded-xl">
-                <img src="/images/onepay.png" alt="code"
-                    class="w-[320px] h-[200px] rounded-xl"
-                >
-                    <h3 class="font-semibold text-lg text-darkPink">Transbank Onepay</h3>
-                    <p class="flex flex-wrap w-[320px] pt-4">
-                        Billetera digital del banco de chile que permite a los usuarios 
-                        realizar transacciones desde su celular, desarrollado en Java.
-                    </p>
-                    <div class="flex justify-center items-center text-center w-[320px] mt-4">
-                    </div>
-                    <div class="card_experience-border"></div>
-            </div> 
+
+        <!-- Segundo proyecto: Transbank Onepay -->
+        <a target="_blank" href="https://publico.transbank.cl/landing-onepay-referidos" class="cart-experience w-[280px] md:w-[330px] rounded-xl flex justify-center items-center text-center" aria-label="Ir a Transbank Onepay">
+            <article class="w-full h-full flex justify-center items-center text-center flex-col rounded-xl pt-3">
+                <img src="/images/onepay.png" alt="Pantalla de Transbank Onepay, billetera digital" class="w-[220px] h-[200px] rounded-xl" />
+                <h3 class="font-semibold text-lg text-darkPink">Transbank Onepay</h3>
+                <p class="flex flex-wrap pt-4">
+                    Billetera digital del banco de chile que permite a los usuarios 
+                    realizar transacciones desde su celular, desarrollado en Java.
+                </p>
+                <div class="card_experience-border"></div>
+            </article>
         </a>
     </div>
 </section>

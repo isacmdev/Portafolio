@@ -4,38 +4,37 @@ import HeroSection from "../components/hero/HeroSection.astro";
 import AboutMe from "../components/about/AboutMe.astro";
 import Projects from "../components/projects/Projects.astro";
 import Experience from "../components/experience/Experience.astro";
-import SkilsIcon from "../components/icons/SkilsIcon.astro"
 import Skills from "../components/skills/Skills.astro";
 ---
 
 <Layout
-	title="Potafolio Isabel Caballero - Desarrolladora y programadora web"
-	description="Especializado en crear interfaces de usuario intuitivas, dinámicas y únicas."
+  title="Portafolio Isabel Caballero - Desarrolladora y programadora web"
+  description="Especializada en crear interfaces de usuario intuitivas, dinámicas y únicas."
 >
-<main class="">
-	<section id="top" class="max-w-full mx-auto w-full pt-1 md:mt-16">
-	  <HeroSection />
-	</section>
-  
-	<section id="about" class="max-w-full mx-auto w-full pt-12 md:pt-32 md:mt-10">
-	  <AboutMe />
-	</section>
-  
-	<section id="experience" class="max-w-full mx-auto w-full pt-12">
-	  <Experience />
-	</section>
-  
-	<section id="projects" class="max-w-full mx-auto w-full pt-12 md:pt-32 md:pb-44">
-	  <Projects />
-	</section>
-  
-	<section id="skills" class="max-w-full mx-auto w-full pt-12">
-	  <div class="flex items-center gap-x-2 w-full">
-		<SkilsIcon />
-		<h2 class="text-2xl font-semibold py-4">Habilidades</h2>
-	  </div>
-	  <Skills />
-	</section>
+  <main class="md:pt-40 md:gap-40 pt-30 gap-20">
+    <!-- Sección Hero -->
+    <section id="top" class="flex justify-center">
+      <HeroSection />
+    </section>
+
+    <!-- Sección Acerca de mí -->
+    <section id="about" class="flex justify-center">
+      <AboutMe />
+    </section>
+
+    <!-- Sección Experiencia -->
+    <section id="experience" class="flex justify-center">
+      <Experience />
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="projects" class="flex justify-center">
+      <Projects />
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section id="skills" class="flex flex-col items-center justify-center">
+      <Skills />
+    </section>
   </main>
 </Layout>
-   

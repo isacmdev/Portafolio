@@ -1,24 +1,29 @@
 ---
+import SkillsIcon from "../icons/SkillsIcon.astro"
 import { icons } from "./ArrayIcons.astro"
 import "./styleSkills.css"
 ---
-<section class=" md:w-full pb-16 relative overflow-hidden mt-10">
-  <p class="pb-8 pt-2 md:text-lg pl-2 opacity-80">
-    Ofrezco soluciones innovadoras y de alta calidad para asegurar el éxito en cualquier proyecto,
-    creando interfaces tecnológicas intuitivas y modernas, además de desarrollar backends robustos y
-    eficientes que garantizan un rendimiento óptimo e integración perfecta con las bases de datos y servicios.
+<section class="flex flex-col justify-center gap-4 pb-10 max-w-screen-md" aria-labelledby="skills-section">
+  <div class="flex items-center gap-4">
+      <SkillsIcon alt="Icono de habilidades" />
+      <h2 id="skills-section" class="text-2xl font-semibold text-center">Habilidades</h2>
+  </div>
+
+  <p class="md:text-lg opacity-80 max-w-3xl mx-auto">
+      Ofrezco soluciones innovadoras y de alta calidad para asegurar el éxito en cualquier proyecto,
+      creando interfaces tecnológicas intuitivas y modernas, además de desarrollar backends robustos y
+      eficientes que garantizan un rendimiento óptimo e integración perfecta con las bases de datos y servicios.
   </p>
-  <div class="container-skills relative rounded-2xl bg-gray-100/5 w-full flex p-8 gap-8 md:justify-around
-  flex-wrap items-center justify-center text-center border border-white/10">
-    {icons.map(({ component: IconComponent, name, size }) => (
-      <div class="card flex flex-col items-center  hover:scale-110 transition-transform duration-500">
-        <div class="card2">
-        <IconComponent class={`${size} p-4`} />
-        <span class="mt-2">{name}</span>
-        </div>
-      </div> 
-    ))}
+
+  <div class="container-skills mx-auto max-w-[792px] rounded-2xl bg-gray-100/5 p-8 gap-10 md:gap-14 flex flex-wrap justify-center items-center text-center border border-white/10" role="region" aria-labelledby="skills-list">
+      <h3 id="skills-list" class="sr-only">Lista de habilidades</h3>
+      {icons.map(({ component: IconComponent, name, size }) => (
+          <article class="card flex flex-col items-center hover:scale-110 transition-transform duration-500" role="listitem">
+              <div class="card2">
+                  <IconComponent class={`${size} p-4`} aria-hidden="true" />
+                  <span class="mt-2">{name}</span>
+              </div>
+          </article>
+      ))}
   </div>
 </section>
-
-  

@@ -2,28 +2,33 @@
 import LinkedinIcon from "../icons/LinkedinIcon.astro"
 import GithubIcon from "../icons/GithubIcon.astro"
 import GmailIcon from "../icons/GmailIcon.astro"
+
+const socialLinks = [
+  {
+    Icon: LinkedinIcon,
+    label: "LinkedIn",
+    url: "https://www.linkedin.com/in/isabel-caballero-dev/",
+  },
+  {
+    Icon: GithubIcon,
+    label: "GitHub",
+    url: "https://github.com/UrregoJontahan",
+  },
+  {
+    Icon: GmailIcon,
+    label: "Correo",
+    url: "mailto:devisamott@gmail.com",
+  },
+];
 ---
 
-<footer class="w-[400px] md:w-full hidden md:flex" id="contact">
-   <div class="relative bottom-0 w-full flex justify-center bg-black/70 shadow-xl shadow-gray-50/5
-        p-8 gap-x-8">
-        <div class="flex gap-x-2 cursor-pointer">
-            <LinkedinIcon class="w-6 h-6" />
-            <a href="https://www.linkedin.com/in/isabel-caballero-dev/" target="_blank" class="hidden md:block">
-                LinkedIn
-            </a>
-        </div>
-        <div class="flex gap-x-2 cursor-pointer">
-            <GithubIcon class="w-6 h-6"/>
-            <a href="https://github.com/UrregoJontahan" target="_blank" class="hidden md:block">
-                GitHub 
-            </a>
-        </div>
-        <div class="flex gap-x-2 cursor-pointer">
-            <GmailIcon class="w-6 h-6"/>
-            <p>
-                devisamott@gmail.com
-            </p>
-        </div>
-   </div>
+<footer class="hidden md:block mx-auto w-full text-gray-200 bg-black/70 shadow-xl shadow-gray-50/5 p-8" id="contact">
+  <nav class="flex justify-center gap-x-12">
+    {socialLinks.map(({ Icon, label, url }) => (
+      <a href={url} target="_blank" rel="noopener noreferrer" class="flex items-center gap-x-2 cursor-pointer">
+        <Icon class="w-6 h-6" aria-label={label} />
+        <span class="hidden md:block">{label}</span>
+      </a>
+    ))}
+  </nav>
 </footer>

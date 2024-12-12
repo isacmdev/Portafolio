@@ -2,7 +2,7 @@
 import '@fontsource-variable/onest';
 import Header from '../components/header/Header.astro';
 import Footer from "../components/footer/Footer.astro"
-// import SmokeBackgroud from '../components/SmokeBackgroud.astro';
+import SmokeBackgroud from '../components/SmokeBackgroud.astro';
 
 interface Props {
 	title: string;
@@ -23,23 +23,35 @@ const { title ,description } = Astro.props
 	</head>
 	<body>
 		<Header/>
-		<!-- <SmokeBackgroud/> -->
+		<SmokeBackgroud/>
 			<slot />
 		<Footer/>
 	</body>
 </html>
 <style is:global>
-	html {
-		font-family: system-ui, sans-serif;
-		flex-shrink: 0;
+	
+	body {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  font-family: 'Onest Variable', sans-serif;
 	}
-	body{
+	main {
 		display: flex;
-		align-content: center;
 		flex-direction: column;
-		justify-content: center;  
-		color: white;
-		font-family: 'Onest Variable', sans-serif;
+		justify-content:center;
+		min-height: 100vh;
+		padding: 2rem;
 	}
 
-</style>
+	:root {
+	--header-height: 8rem; 
+	}
+
+	html {
+	scroll-padding-top: var(--header-height);
+	}
+
+
+  </style>
+  
