@@ -4,13 +4,13 @@ import { navLinks } from "./navList.astro";
 
 <header class="fixed z-10 bottom-0 md:top-0 w-full h-20 md:h-24 flex items-center justify-evenly shadow-xl shadow-gray-90/10 backdrop-blur-xl">
   <div class="flex text-black">
-    <nav aria-label="Main navigation" class="flex md:flex-row md:gap-12 gap-5 text-xs">
-      <ul class="flex gap-5">
+    <nav aria-label="Main navigation" class="flex md:flex-row md:gap-12">
+      <ul class="flex md:gap-3 gap-2">
         {navLinks.map(({ href, label, extraClasses = "", }) => (
           <li>
             <a
               href={href}
-              class={`md:text-xl font-semibold hover:underline hover:underline-offset-2 ${extraClasses}`}
+              class={`md:text-xl text-xs font-semibold hover:underline hover:underline-offset-2 ${extraClasses}`}
               aria-label={label}
             >
               {label}

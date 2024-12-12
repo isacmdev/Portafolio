@@ -35,10 +35,10 @@ const { class: customClass = "", useSocialPill = true } = Astro.props;
           <p>{label}</p>
         </SocialPill>
       ) : (
-        <a href={url} aria-label={label} class="flex items-center gap-2 text-white">
-          <Icon class="w-6 h-6" />
-          <span>{label}</span>
-        </a>
+          <a href={url} aria-label={label} class="flex items-center gap-4 text-white">
+            <Icon class="w-6 h-6 " />
+            <span>{label}</span>
+          </a>
       )}
     </li>
   ))}
