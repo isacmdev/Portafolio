@@ -1,0 +1,45 @@
+---
+import LinkedinIcon from "../icons/LinkedinIcon.astro";
+import GithubIcon from "../icons/GithubIcon.astro";
+import GmailIcon from "../icons/GmailIcon.astro";
+import SocialPill from "../social-pill/SocialPill.astro";
+
+const socialLinks = [
+  {
+    Icon: LinkedinIcon,
+    label: "LinkedIn",
+    url: "https://www.linkedin.com/in/isabel-caballero-dev/",
+  },
+  {
+    Icon: GithubIcon,
+    label: "GitHub",
+    url: "https://github.com/jadodev",
+  },
+  {
+    Icon: GmailIcon,
+    label: "Correo",
+    url: "mailto:devisamott@gmail.com",
+  },
+];
+
+// Recibimos un prop para decidir si usar el estilo completo o más simple
+const { class: customClass = "", useSocialPill = true } = Astro.props;
+---
+
+<ul class={`flex flex-wrap gap-4 ${customClass}`}>
+  {socialLinks.map(({ Icon, label, url }) => (
+    <li>
+      {useSocialPill ? (
+        <SocialPill href={url} aria-label={label}>
+          <Icon class="w-6 h-6" />
+          <p>{label}</p>
+        </SocialPill>
+      ) : (
+        <a href={url} aria-label={label} class="flex items-center gap-2 text-white">
+          <Icon class="w-6 h-6" />
+          <span>{label}</span>
+        </a>
+      )}
+    </li>
+  ))}
+</ul>
