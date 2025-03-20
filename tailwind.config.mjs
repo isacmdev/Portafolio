@@ -7,7 +7,7 @@ export default {
 				softRed: '#FF748B',
 				darkPink: '#AF1740',
 				textDarkPink: '#da2650',
-				textPrincipal: '#333333'
+				textPrincipal: '#DDDDD'
 			},
 		},	
 	},
