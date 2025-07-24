@@ -8,41 +8,54 @@ import "./experiencia.css"
     <ExperienceIcon aria-hidden="true" />
     <h1 class="font-bold text-2xl">Experiencia laboral</h1>
   </header>
+
   <div class="flex flex-col md:flex-row mt-10 gap-12 max-w-screen-md">
-    <!-- Bloque de experiencia: BairesDev -->
-    <article class="cart-experience p-8 flex flex-col items-center">
+    <!-- BairesDev -->
+    <article class="cart-experience flex-1 flex flex-col p-8">
       <div class="card_experience-border"></div>
       <h2 class="font-semibold text-xl">BairesDev</h2>
-      <h3 class="text-darkPink">Abril 2021 - Presente</h3>
-      <ul class="flex flex-col gap-4 opacity-80">
-        <li>
-          <h4 class="font-bold">● Plataforma de Gestión de Cobranzas</h4>
-          <ul>
-            <li class="hidden md:block">- Desarrollo frontend con Angular y Tailwind CSS.</li>
-            <li class="hidden md:block">- Implementación de integraciones AWS (S3, Lambda, Cognito).</li>
-          </ul>
-        </li>
-        <li>
-          <h4 class="font-bold">● Módulo de Gestión de Incidentes</h4>
-          <p class="hidden md:block">- Implementación de mapas interactivos y GPS.</p>
-        </li>
-        <li>
-          <h4 class="font-bold">● Plataforma E-commerce</h4>
-          <p class="hidden md:block">- Desarrollo de funcionalidades en React y NextJS.</p>
-          <p class="hidden md:block">- Integración de pasarelas de pago (PayPal, Mercado Pago) y autenticación OAuth2 con Auth0.</p>
-        </li>
-      </ul>
+      <h3 class="text-darkPink">Abril 2022 – Actualidad</h3>
+      <div class="flex-1 mt-4">
+        <ul class="flex flex-col gap-4 opacity-80 text-sm leading-relaxed">
+          <li>
+            ● Optimizé Core Web Vitals en rutas críticas (<strong>LCP &lt; 1s</strong>) mediante lazy loading estratégico, detección de cambios optimizada y carga diferida de imágenes, logrando un <strong>+34% de conversión</strong>.
+          </li>
+          <li>
+            ● Implementé pruebas unitarias y end-to-end en pipelines CI, alcanzando <strong>90% de cobertura</strong> en componentes clave con <code>Jasmine</code>, <code>Cypress</code> y herramientas de integración continua.
+          </li>
+          <li>
+            ● Refactoricé una SPA monolítica a arquitectura basada en micro frontends utilizando <code>Module Federation</code> y Webpack 5, habilitando despliegues independientes por feature.
+          </li>
+          <li>
+            ● Configuré monitoreo continuo de experiencia de usuario con métricas web y dashboards personalizados en <code>Prometheus</code> y <code>Grafana</code>.
+          </li>
+        </ul>
+      </div>
     </article>
-    <!-- Bloque de experiencia: Gradiweb -->
-    <article class="cart-experience p-8">
+
+    <!-- Gradiweb -->
+    <article class="cart-experience flex-1 flex flex-col p-8">
       <div class="card_experience-border"></div>
       <h2 class="font-semibold text-xl">Gradiweb (Prácticas)</h2>
-      <h3 class="text-darkPink">Diciembre 2019 - Septiembre 2020 </h3>
-      <ul class="flex flex-col gap-2 opacity-80">
-        <li>- Desarrollo de booking ecológico con React y SASS.</li>
-        <li>- Gestión de estado con Redux para optimización de recursos.</li>
-        <li>- Colaboración en SCRUM usando Jira y BitBucket.</li>
-      </ul>
+      <h3 class="text-darkPink">Septiembre 2020 – Diciembre 2021</h3>
+      <div class="flex-1 mt-4">
+        <ul class="flex flex-col gap-4 opacity-80 text-sm leading-relaxed">
+          <li>
+            ● Rediseñé el flujo de pagos con formularios dinámicos y validaciones reactivas, mejorando accesibilidad (roles ARIA, gestión de focus) y reduciendo el abandono en un <strong>22%</strong>.
+          </li>
+          <li>
+            ● Integré herramientas de analítica (<code>GA4</code>, <code>Segment</code>, <code>Hotjar</code>) para validar flujos críticos y experimentar con tests A/B orientados a negocio.
+          </li>
+          <li>
+            ● Desarrollé componentes desacoplados y reutilizables usando patrones headless, separación de lógica y presentación, e inputs custom con interoperabilidad de formularios.
+          </li>
+          <li>
+            ● Colaboré en definiciones de UX con diseño y QA, validando microinteracciones, contraste y accesibilidad con herramientas como <code>Axe</code>.
+          </li>
+        </ul>
+      </div>
     </article>
+
+
   </div>
 </section>

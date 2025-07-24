@@ -2,7 +2,7 @@
     margin: 0 auto;
     width: 60px;
     height: 150px;
-    background-image: linear-gradient(163deg, #ff5c8a 50%, #ff5a86 100%);
+    background-image: linear-gradient(163deg, #ff96b4 50%, #ff96b4 100%);
     border-radius: 20px;
     transition: all .7s;
 }
@@ -12,7 +12,7 @@
     flex-direction: column;
     width: 90px;
     height: 150px;
-    background-color: #FFABAB;
+    background-color: #d4567a;
     border-radius:20px;
     transition: all .5s;
     justify-content: center;
@@ -25,5 +25,5 @@
 }
 
 .card:hover {
-    box-shadow: 0px 0px 30px 1px rgba(255, 0, 140, 0.3);
+    box-shadow: 0px 1px 20px 20px #ff96b4;
 }

@@ -6,22 +6,29 @@ import AboutIcon from "../icons/AboutIcon.astro"
     <AboutIcon />
     <h2 class="text-2xl font-semibold">Sobre mí</h2>
   </header>
-  <div class="flex flex-col md:flex-row mt-10 gap-10 text-textPrincipal">
+  <div class="flex flex-col md:flex-row gap-10 text-textPrincipal">
     <!-- Descripción principal -->
-    <p class="text-lg leading-relaxed max-w-sm hidden md:block text-center md:text-left">
-      Como desarrolladora de aplicaciones web, me especializo en crear experiencias digitales inclusivas y accesibles que realmente importan. Mi experiencia trabajando con equipos diversos me ha enseñado que la colaboración y la retroalimentación son clave para alcanzar la excelencia. Estoy comprometida con el aprendizaje continuo y apasionada por enfrentar proyectos tecnológicos desafiantes que generen un impacto positivo.
-    </p>
-    <p class="block md:hidden text-center  leading-relaxed  max-w-lg ">
-       Desarrolladora web apasionada por crear aplicaciones inclusivas y accesibles. Trabajo bien en equipos diversos, valoro la retroalimentación y disfruto asumir retos tecnológicos que generen impacto positivo.    
-    </p>
+     <div class="flex items-center ">
+
+       <p class="text-lg leading-relaxed max-w-sm hidden md:block text-center ">
+        Como desarrolladora de aplicaciones web, me especializo en crear experiencias digitales inclusivas y accesibles que realmente marquen la diferencia.
+        <br/>
+        <br/>
+        He tenido la oportunidad de trabajar con equipos diversos, lo que me ha enseñado que la colaboración y la retroalimentación son fundamentales para alcanzar resultados de excelencia.
+       </p>
+       <p class="block md:hidden text-center  leading-relaxed  max-w-lg ">
+          Desarrolladora web apasionada por crear aplicaciones inclusivas y accesibles. 
+          <br/>
+          Trabajo bien en equipos diversos, valoro la retroalimentación y disfruto asumir retos tecnológicos que generen impacto positivo.    
+       </p>
+     </div>
     <!-- Imagen -->
     <figure class="flex justify-center md:justify-center">
       <img
         src="/images/photo.jpeg"
         alt="Fotografía de la desarrolladora"
-        class="rounded-2xl w-full max-w-xs md:max-w-sm object-cover"
+        class="rounded-2xl w-full max-w-xs md:max-w-xs object-cover"
       />
     </figure>
   </div>
 </section>
-

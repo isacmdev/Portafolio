@@ -1,4 +1,4 @@
-<div id="smoke-bkg" class="fixed top-0 h-full w=full -z-10 "></div>
+<div id="smoke-bkg" class="fixed top-0 h-full w-full -z-10 "></div>
 
 <script>
     import * as THREE from 'three'
@@ -24,11 +24,11 @@
     renderer.shadowMap.enabled = false;
     renderer.shadowMap.type = THREE.PCFSoftShadowMap; 
 
-    const light = new THREE.DirectionalLight(0xfffafa, 1);
+    const light = new THREE.DirectionalLight(0xfffafa,5);
     light.position.set(0, 3, 2);
     scene.add(light);
 
-    const ambientLight = new THREE.AmbientLight(0xFCC8D1, 0.5); 
+    const ambientLight = new THREE.AmbientLight(0xFCC8D1, 0.7); 
     scene.add(ambientLight);
 
     light.castShadow = true;
@@ -48,8 +48,8 @@
         const smokeMaterial = new THREE.MeshLambertMaterial({
             map: texture,
             transparent: true,
-            color: 0xFFABAB,
-            opacity: 0.9,
+            color: 0xd4567a,
+            opacity: 0.6,
             blending: THREE.NormalBlending, 
         })
 
